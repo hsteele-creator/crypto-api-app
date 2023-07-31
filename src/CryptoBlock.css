@@ -30,7 +30,8 @@
 @media screen and (max-width: 800px) {
 
     .crypto-block-container {
-        width: 100%;
+        width: 70%;
+        margin: 10px auto;
     }
 
     .crypto-block-container p {

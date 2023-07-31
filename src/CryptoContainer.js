@@ -40,8 +40,9 @@ const CryptoContainer = () => {
               <input
                 type="text"
                 onChange={(e) => setSearch(e.target.value)}
+                value={search}
               ></input>
-              <button>Submit</button>
+              <button onClick={(e) => setSearch("")}>Reset</button>
             </div>
             {cryptoData.map((crypto) => {
               return (
