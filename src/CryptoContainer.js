@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import CryptoBlock from "./CryptoBlock";
 import "./CryptoContainer.css";
+import BackToTopButton from "./BackToTopButton";
 
 const CryptoContainer = () => {
   const [data, setData] = useState("");
@@ -22,7 +23,7 @@ const CryptoContainer = () => {
   const cryptoData =
     search === ""
       ? data
-      : data.filter((item) => item.name.toLowerCase().includes(search));
+      : data.filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
 
   {
     if (!data) {
@@ -41,6 +42,7 @@ const CryptoContainer = () => {
                 type="text"
                 onChange={(e) => setSearch(e.target.value)}
                 value={search}
+                placeholder="Search by Name"
               ></input>
               <button onClick={(e) => setSearch("")}>Reset</button>
             </div>
@@ -59,6 +61,7 @@ const CryptoContainer = () => {
               );
             })}
           </div>
+          <BackToTopButton />
         </>
       );
     }
