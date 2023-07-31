@@ -30,13 +30,14 @@
 @media screen and (max-width: 800px) {
 
     .crypto-block-container {
-        width: 100%;
+        width: 85%;
         margin: 10px auto;
     }
 
     .crypto-block-container p {
         font-size: 12px;
         padding: 0 6px;
+        width: 60px;
     }
 
     .crypto-high {
