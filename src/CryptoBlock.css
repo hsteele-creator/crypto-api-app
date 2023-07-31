@@ -1,0 +1,49 @@
+.crypto-block-container {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+
+.crypto-block-img {
+    width: 30px;
+}
+
+.crypto-block-container p {
+    font-size: 12px;
+    padding: 0 6px;
+    width:120px;
+}
+
+.positive {
+    color: green;
+    font-weight: bold;
+}
+
+.negative {
+    color: red;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+
+    .crypto-block-container {
+        width: 100%;
+    }
+
+    .crypto-block-container p {
+        font-size: 12px;
+        padding: 0 6px;
+    }
+
+    .crypto-high {
+        display: none;
+    }
+
+    .crypto-low {
+        display: none;
+    }
+
+}
