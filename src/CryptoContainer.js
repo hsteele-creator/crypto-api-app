@@ -29,7 +29,7 @@ const CryptoContainer = () => {
       return (
         <>
           <h1 className="loading">Loading...</h1>
-          <p className="loading">If this message does not dissapear please try again in 5 minutes.</p>
+          <p className="loading">If this message does not dissapear please try again in 10 minutes.</p>
         </>
       );
     } else {
